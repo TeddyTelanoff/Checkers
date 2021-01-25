@@ -12,7 +12,6 @@ public class PieceManager : MonoBehaviour
 
 	private void Awake()
 	{
-		Debug.LogError("$2");
 		Debug.Assert(Instance == null);
         Instance = this;
 

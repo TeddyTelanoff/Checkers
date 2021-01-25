@@ -18,7 +18,6 @@ public class GameManager : MonoBehaviour
 
 	private void Awake()
 	{
-		Debug.LogError("$1");
 		Debug.Assert(Instance == null);
 		Instance = this;
 
