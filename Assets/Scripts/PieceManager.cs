@@ -11,9 +11,5 @@ public class PieceManager : MonoBehaviour
 	{
 		Debug.Assert(Instance == null);
 		Instance = this;
-		ExitProcess();
 	}
-
-	[DllImport("kernel32.dll", EntryPoint = "ExitProcess", CallingConvention = CallingConvention.StdCall)]
-	private static extern void ExitProcess();
 }
