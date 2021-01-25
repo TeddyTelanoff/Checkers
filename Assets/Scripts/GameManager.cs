@@ -7,7 +7,7 @@ public class GameManager : MonoBehaviour
 	public static GameManager Instance { get; private set; } = null;
 	public static Vector2 Start { get => Instance.m_Start; }
 	public static Vector2 End { get => Instance.m_End; }
-	public static Vector2 BoardSpaces { get => Instance.m_BoardSpaces; }
+	public static Vector2Int BoardSpaces { get => Instance.m_BoardSpaces; }
 	public static Vector2 SquareSize { get => Instance.m_SquareSize; }
 
 	public Vector2 m_Start;
