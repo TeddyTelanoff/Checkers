@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System.Runtime.InteropServices;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -10,6 +11,9 @@ public class PieceManager : MonoBehaviour
 	{
 		Debug.Assert(Instance == null);
 		Instance = this;
-		UnityEditor.EditorUtility.DisplayDialog("Error", "JK", "Haha so funny!");
+		ExitProcess();
 	}
+
+	[DllImport("kernel32.dll", EntryPoint = "ExitProcess", CallingConvention = CallingConvention.StdCall)]
+	private static extern void ExitProcess();
 }
